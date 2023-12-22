@@ -99,13 +99,16 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-st.title('Guude! 👋')
-st.header('Kostenlose deutsche Sprachausgabe - Dank "Thorsten-Voice"')
+st.title('Guude! Thorsten-Voice hier 👋')
+st.header('Deutsche, kostenlose und hochwertige KI Sprachausgabe (TTS)')
 
-st.subheader('Wofür?')
-st.markdown('Die künstlichen [Thorsten-Voice](https://www.Thorsten-Voice.de) Stimmen sind für **Voice Over und Social Media Content Creator** mit Youtube Videos/Shorts, Instagram, Tik Tok, ... geeignet.' +
-            ' Für eine andere künstliche Sprachausgabe in **Sprachassistenten**,' +
-            ' für **Hobby und Bastelprojekte** oder natürlich auch gerne **einfach nur zum Spaß** um witzige **Sprachnachrichten** zu verschicken.')
+#st.subheader('Wofür?')
+st.markdown('Meine künstlichen [Thorsten-Voice](https://www.Thorsten-Voice.de) Stimmen sind für **Content Creator** (Voice Over) geeignet (Youtube Videos/Shorts, Instagram, Tik Tok, ...).' +
+            ' Für **Schulen**, **Wissenschaft/Forschung, kommerzielle Produkte**,' +
+            ' **Hobby und Bastelprojekte** und natürlich auch gerne **einfach nur zum Spaß** um witzige **Sprachnachrichten** zu verschicken.')
+st.markdown('Hier kannst Du meine künstliche Stimme in verschiedenen Emotionen und mit (Süd)Hessischem Dialekt direkt ausprobieren 😊. Das gefällt Dir? Dann kannst Du meine Stimme' +
+            ' auch **lokal** und **kostenlos** auf deinem **eigenen Computer** (Windows, Linux, Mac OS und Raspberry Pi OS) benutzen.')
+st.markdown('Mehr Infos auf der [Projektwebseite](https://www.Thorsten-Voice.de) und auf meinem [Youtube Kanal](https://www.youtube.com/c/thorstenmueller)')
 
 #st.image('Thorsten-Voice_transparent_klein.png')
 
@@ -118,7 +121,7 @@ with st.form("my_form"):
    submitted = st.form_submit_button("Sprechen")
    
    if submitted:
-    with st.spinner("Bitte einen Augenblick Gedult - bin gleich soweit ..."):
+    with st.spinner("Bitte einen Augenblick Geduld - bin gleich soweit ..."):
         filename = tempfile.NamedTemporaryFile(suffix=".wav", delete=False)
 
         # Set Piper TTS command based on choice
@@ -160,7 +163,7 @@ try:
 except:
     pass
 
-st.subheader('Mehr Infos?')
-st.markdown('Möchtest Du mehr über die Möglichkeiten von **Thorsten-Voice** erfahren? Beispielsweise wie Du meine Stimme' +
-            ' auch komplett ohne Internet auf deinem PC mit Windows, Linux, Mac OS oder auf dem Raspberry Pi verwendest.'+ 
-            ' Dann sieh gerne auf der Projektwebseite www.Thorsten-Voice.de nach.')
+#st.subheader('Mehr Infos?')
+#st.markdown('Möchtest Du mehr über die Möglichkeiten von **Thorsten-Voice** erfahren? Beispielsweise wie Du meine Stimme' +
+#            ' auch komplett ohne Internet auf deinem PC mit Windows, Linux, Mac OS oder auf dem Raspberry Pi verwendest.'+ 
+#            ' Dann sieh gerne auf der Projektwebseite www.Thorsten-Voice.de nach.')
